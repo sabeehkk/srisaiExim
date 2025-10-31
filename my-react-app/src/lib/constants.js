@@ -91,7 +91,7 @@ export const SERVICE_CARDS = [
       hero: "Reliable, High-Volume Global Shipping",
       intro: "Sri Sai Exim handling ocean freight is the method of transporting often large loads of goods by sea – putting cargo in large containers which are loaded onto vessels. As a general rule, shipments weighing more than 100kg – or consisting of multiple cartons – will be sent by sea freight.",
       services: [
-        "Transportation (Inland Transport)",
+        "Transportation",
         "Warehousing",
         "Packing, Loading and Stuffing",
         "Perishables, Dangerous Goods, Sensitive Cargo Handling",
