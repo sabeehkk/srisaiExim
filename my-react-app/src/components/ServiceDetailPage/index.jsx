@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { SERVICE_CARDS } from "@/lib/constants";
+// import air_freight from "@/assets/air_freight.jpg"
 
 // --- Default/Fallback Content ---
 const DEFAULT_IMAGE = "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg"; 
@@ -12,7 +13,7 @@ const DEFAULT_SERVICES = [
   "Proactive, real-time tracking and timely milestone reports",
 ];
 const DEFAULT_CONTACT = {
-  phone: "+91 9972314988",
+  phone: "+91 99452 42861",
   email: "sales@srisaiexim.in",
 };
 
@@ -36,10 +37,10 @@ const ServiceDetailPage = () => {
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-105" 
-        />
+          className="w-full h-full  transition duration-500 ease-in-out hover:scale-105" 
+        /> {/* object-cover */}
         <div className="absolute inset-0 bg-[#122b6015] bg-opacity-40 flex items-end p-12">
-          <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white tracking-tight leading-snug drop-shadow-lg" style={{fontSize: "40px"}}>
+          <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white tracking-tight leading-snug drop-shadow-lg" style={{fontSize: "40px" , textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }} >
             {title}
           </h1>
         </div>
@@ -81,6 +82,7 @@ const ServiceDetailPage = () => {
           </div>
 
           {/* Contact Information (Column 3 - Sidebar) */}
+          
           <div className="lg:col-span-1">
             <div className="sticky top-10 p-6 bg-white border border-gray-200 rounded-lg shadow-xl">
               <h3 className="text-2xl font-bold text-[#207391] mb-4 border-b pb-2">  {/* gray-800 */}

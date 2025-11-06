@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import {
   PRIMARY_COLOR,
   TEAL,
-  DARK_BLUE,
-  VIOLET,
   PAGE_LINKS,
   SERVICE_CARDS,
   COMPANY_NAME,
@@ -12,43 +10,57 @@ import {
 import SriSaiEximLogo from "@/components/SriSaiEximLogo";
 
 const Footer = () => {
+  const backgroundColor = "#219ebc"; // Main background
+  const headingColor = "#ffffff"; // White headings
+  const textColor = "#e6f1f5"; // Light text for readability
+  const accentColor = "#023047"; // Deep navy accent for hover/border
+
   return (
     <footer
       className="text-white pt-16 pb-8 font-poppins border-t-4"
-      style={{ borderColor: VIOLET, backgroundColor: "#baecfb" }}
+      style={{
+        borderColor: accentColor,
+        backgroundColor,
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-300 pb-10">
-          
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-200/30 pb-10">
           {/* Column 1: Logo & About */}
           <div className="col-span-2 md:col-span-1 space-y-4">
             <Link to="/" className="inline-block">
               <SriSaiEximLogo className="w-8 h-8 cursor-pointer" />
             </Link>
-            <p className="text-sm text-[#0047AB] max-w-xs">   {/* gray-900  */}
-              Dedicated to providing hassle-free, timely, and cost-effective logistics and customs solutions worldwide.
+            <p className="text-sm leading-relaxed" style={{ color: textColor }}>
+              Dedicated to providing hassle-free, timely, and cost-effective
+              logistics and customs solutions worldwide.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
+            <h4
+              className="text-lg font-semibold tracking-wide mb-3"
+              style={{ color: headingColor ,textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }}
+            >
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm">
               {PAGE_LINKS.map((link) => (
-                <li key={link.page} style={{ paddingBottom: "12px" }}>
+                <li key={link.page}>
                   <Link
                     to={`/${link.page === "home" ? "" : link.page}`}
                     className="transition duration-300"
                     style={{
-                      color: PRIMARY_COLOR,
-                      backgroundColor: "transparent",
-                      border: "none",
+                      color: textColor,
+                      textDecoration: "none",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = accentColor)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color = textColor)
+                    }
                   >
                     {link.name}
                   </Link>
@@ -59,25 +71,32 @@ const Footer = () => {
 
           {/* Column 3: Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
+            <h4
+              className="text-lg font-semibold tracking-wide mb-3"
+              style={{ color: headingColor,textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }}
+            >
               Our Services
             </h4>
             <ul className="space-y-2 text-sm">
               {SERVICE_CARDS.map((service) => {
-                const serviceSlug = service.id || service.title.toLowerCase().replace(/\s+/g, "-");
+                const serviceSlug =
+                  service.id ||
+                  service.title.toLowerCase().replace(/\s+/g, "-");
                 return (
-                  <li key={service.id} style={{ paddingBottom: "12px" }}>
+                  <li key={service.id}>
                     <Link
                       to={`/services/${serviceSlug}`}
                       className="transition duration-300"
                       style={{
-                        color: PRIMARY_COLOR,
-                        backgroundColor: "transparent",
-                        border: "none",
-                        outline: "none",
+                        color: textColor,
+                        textDecoration: "none",
                       }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.color = accentColor)
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.color = textColor)
+                      }
                     >
                       {service.title}
                     </Link>
@@ -89,33 +108,46 @@ const Footer = () => {
 
           {/* Column 4: Contact Info */}
           <div className="space-y-4 col-span-2 md:col-span-1">
-            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
+            <h4
+              className="text-lg font-semibold tracking-wide mb-3"
+              style={{ color: headingColor,textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }}
+            >
               Reach Us
             </h4>
             <div className="flex items-center space-x-3 text-sm">
-              <MapPin className="w-5 h-5" style={{ color: VIOLET }} />
-              <p className="text-[#0047AB]">Sahakaranagar,Bengaluru - 560092</p>  {/* gray-900 */}
+              <MapPin className="w-5 h-5" style={{ color: accentColor ,textShadow: "2px 2px 4px rgba(255, 255, 255, 1)"}} />
+              <p style={{ color: textColor }}>
+                Sahakaranagar, Bengaluru - 560092
+              </p>
             </div>
             <div className="flex items-center space-x-3 text-sm">
-              <Phone className="w-5 h-5" style={{ color: VIOLET }} />
+              <Phone className="w-5 h-5" style={{ color: accentColor }} />
               <a
-                href="tel:+919972314988"
+                href="tel:+919945242861"
                 className="transition"
-                style={{ color: PRIMARY_COLOR }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
-                onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
+                style={{ color: textColor }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.color = accentColor)
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = textColor)
+                }
               >
-                +91 9972314988
+                +91 9945242861
               </a>
             </div>
             <div className="flex items-center space-x-3 text-sm">
-              <Mail className="w-5 h-5" style={{ color: VIOLET }} />
+              <Mail className="w-5 h-5" style={{ color: accentColor }} />
               <a
                 href="mailto:sales@srisaiexim.in"
                 className="transition"
-                style={{ color: PRIMARY_COLOR }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
-                onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
+                style={{ color: textColor }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.color = accentColor)
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = textColor)
+                }
               >
                 sales@srisaiexim.in
               </a>
@@ -124,8 +156,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-          <p className="mb-2 md:mb-0 text-center md:text-left">
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+          <p
+            className="mb-2 md:mb-0 text-center md:text-left"
+            style={{ color: "#dceef2" }}
+          >
             © {new Date().getFullYear()} {COMPANY_NAME}. All Rights Reserved.
           </p>
         </div>

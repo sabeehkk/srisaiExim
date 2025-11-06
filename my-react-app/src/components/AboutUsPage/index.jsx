@@ -26,22 +26,22 @@ const AboutUsPage = () => (
 
       <div className="relative h-full flex flex-col justify-center items-center p-6 sm:p-8 z-10 animate-fade-in-up text-center sm:text-left">
         <p className="text-gray-200 text-xs sm:text-sm tracking-widest uppercase mb-2 font-light">
-          <Link to="/" className="hover:underline" style={{color:"#0011cbff"}} >Home</Link> /{" "}
+          <Link to="/" className="hover:underline" style={{color:"#005ef5ff" , textShadow: "0 0 0.5px black, 0 0 0.5px white" }} >Home</Link> /{" "}
           <span className="font-medium text-white" style={{ textShadow: "0 0 0.5px white, 0 0 0.5px white" }}>
             About Us
           </span>
         </p>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide leading-tight">
-          <span className="text-[#0051c2ff]" style={{ textShadow: "2px 2px 4px rgba(255, 255, 255, 0.66)" }}>
+          <span className="text-[#30b6f0]" style={{ textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }}>
             ABOUT{" "}
           </span>
           <span className="font-bold text-white" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}>
             {COMPANY_NAME}
           </span>
         </h2>
-
-        <div className="w-16 sm:w-20 h-1 mt-4 rounded-full" style={{ backgroundColor: TEAL }}></div>
+            {/* style={{ textShadow: "2px 2px 4px rgba(255, 255, 255, 0.66)" }} */}
+        <div className="w-16 sm:w-20 h-1 mt-4 rounded-full" style={{ backgroundColor: "#3444ffff" }}></div>
       </div>
     </div>
 
@@ -107,11 +107,11 @@ const AboutUsPage = () => (
         <p className="text-base sm:text-lg font-light text-gray-800 text-center sm:text-left mb-6 sm:mb-0">
           For all inquiries, please call our specialist team at:{" "}
           <a
-            href="tel:+919972314988"
+            href="tel:+919945242861"
             className="font-bold tracking-wide hover:text-gray-900 transition duration-300 whitespace-nowrap"
             style={{ color: PRIMARY_COLOR }}
           >
-            +91 9972314988
+            +91 9945242861
           </a>
         </p>
 

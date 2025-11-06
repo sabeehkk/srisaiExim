@@ -7,12 +7,13 @@ import TeamPage from "@/components/TeamPage";
 import ServicesPage from "@/components/ServicesPage";
 import ContactPage from "@/components/ContactPage";
 import ServiceDetailPage from "@/components/ServiceDetailPage";
+import ScrollToTopButton from "@/components/ScrollToTopButton"; 
 
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 relative">
         <style dangerouslySetInnerHTML={{ __html: globalStyles }} />
         <Header />
         <main>
@@ -26,6 +27,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
+        <ScrollToTopButton />
       </div>
     </BrowserRouter>
   );

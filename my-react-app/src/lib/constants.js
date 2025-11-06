@@ -1,4 +1,10 @@
 import { Plane, Ship, Truck, Zap, FileText, Package } from "lucide-react"
+//import air_freight from "@/assets/air_freight.jpg"
+import airFreight from "@/assets/airFreight.jpg"
+import oceanFreight from "@/assets/oceanFreight.jpg"
+import cargoTruck from "@/assets/cargoTruck.jpg"
+import logistics from "@/assets/logistics.jpg"
+import dgCertification from "@/assets/dgCertification.jpg"
 
 export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
@@ -56,12 +62,17 @@ export const SERVICE_CARDS = [
     title: "Air Freight",
     description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
     shortDescription: "Sri Sai Exim's specialist air freight teams constantly monitor direct flights and offer just-in-time deliveries to reduce inventory costs.",
-    imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
+    //imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
+    // imageUrl : "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg",
+    //imageUrl : `${airFreight}`,
+    imageUrl:`${airFreight}`,
     content: {
       hero: "Seamless Global Air Cargo Management",
       intro: "Sri Sai Exim specialist air freight teams constantly monitor direct flights and liaise with airlines and agents. With an extensive warehouse network, we also offer temporary storage and just-in-time deliveries that will measurably reduce your inventory costs.",
       services: [
+        "Quick Deliveries on the Upcoming Flight",
         "Worldwide Air Freight",
+        "Overnight Assistance",
         "Global Preferred Carriers",
         "Packaging, crating, and short-term warehousing",
         "Handling of heavy and/or dangerous goods / project cargo",
@@ -75,7 +86,7 @@ export const SERVICE_CARDS = [
         "Door-To-Door Services",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -87,6 +98,7 @@ export const SERVICE_CARDS = [
     description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
     shortDescription: "We handle large loads of goods by sea using containers, ideal for shipments over 100kg.",
     imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
+    imageUrl :`${oceanFreight}`,
     content: {
       hero: "Reliable, High-Volume Global Shipping",
       intro: "Sri Sai Exim handling ocean freight is the method of transporting often large loads of goods by sea – putting cargo in large containers which are loaded onto vessels. As a general rule, shipments weighing more than 100kg – or consisting of multiple cartons – will be sent by sea freight.",
@@ -101,7 +113,7 @@ export const SERVICE_CARDS = [
         "Heavy Duty Containers (for specialized cargo)",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -112,7 +124,8 @@ export const SERVICE_CARDS = [
     title: "Surface Transportation",
     description: "Efficient road and rail cargo services, ensuring timely and damage-free delivery across land routes.",
     shortDescription: "We provide safe, efficient distribution by road, rail, and integrated freight, backed by our own and leased fleet.",
-    imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
+    // imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
+    imageUrl : `${cargoTruck}`,
     content: {
       hero: "Seamless Road, Rail, and Integrated Freight",
       intro: "Surface transportation means any conveyance of people, goods, or commodities using one or more surface transportation modes. Surface transportation primarily means the movement of people and cargo by road, train or ship. With focus and expertise, we provide safe and efficient distribution of a broad variety of goods which includes raw materials, finished and consumer goods, machinery, documents and foodstuffs with support of our dedicated Road Transport team.",
@@ -125,7 +138,7 @@ export const SERVICE_CARDS = [
         "Highest quality of customer service and perfect handling",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -136,7 +149,8 @@ export const SERVICE_CARDS = [
     title: "Logistics & Transportation",
     description: "End-to-end supply chain management, optimizing flow from origin to the final point of delivery.",
     shortDescription: "Expert, integrated supply chain management and transportation solutions.",
-    imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
+    // imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
+    imageUrl : `${logistics}`,
     content: {
       hero: "Service Coming Soon",
       intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
@@ -146,7 +160,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -167,7 +181,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -178,7 +192,8 @@ export const SERVICE_CARDS = [
     title: "DG Certification & Packing",
     description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
     shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
-    imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
+    //imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
+     imageUrl : `${dgCertification}`,
     content: {
       hero: "Service Coming Soon",
       intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
@@ -188,7 +203,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },

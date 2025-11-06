@@ -17,10 +17,9 @@ export default defineConfig({
   },
 })
 
-
 // import react from '@vitejs/plugin-react';
 
-// export default {
+// export default { 
 //   plugins: [react({
 //     jsxRuntime: 'automatic',
 //   })],

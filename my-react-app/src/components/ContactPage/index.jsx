@@ -147,6 +147,7 @@ const ContactPage = () => {
           type="submit"
           className="w-full bg-blue-600 text-white  text-lg font-semibold py-3 rounded-md shadow hover:bg-blue-500 transition"
           disabled={isSending}
+          style={{backgroundColor:"rgb(0, 71, 171)"}}
         >
           {isSending ? "Sending..." : "Let's talk"}
         </button>
@@ -158,7 +159,7 @@ const ContactPage = () => {
         </p>
       )}
     </div>
-
+    
         {/* Contact Info */}
         <div
           className="space-y-8 p-8 lg:p-10 rounded-xl shadow-inner border-t-4"
