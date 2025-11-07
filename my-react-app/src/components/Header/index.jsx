@@ -57,7 +57,7 @@ const Header = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/92 backdrop-blur-sm border-b border-gray-100 shadow-xl font-poppins">
         <FocusResetStyle />
         <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-20 lg:ml-[-4rem]" >
             <SriSaiEximLogo
               className="h-14 focus:outline-none focus-ring-visible mr-10 cursor-pointer transition duration-300 hover:opacity-90"
               onClick={() => handleNavigate("/")}
