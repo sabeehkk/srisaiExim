@@ -42,7 +42,7 @@ const App = () => {
         </main>
         <Footer />
         <ScrollToTopButton />
-        {/* ADDED: The floating chatbot component */}
+        {/* ADDED: The floating chatbot component (Uncomment if needed) */}
         {/* <Chatbot />  */}
       </div>
     </BrowserRouter>
@@ -51,6 +51,7 @@ const App = () => {
 
 export default App;
 
+// --- FIX APPLIED HERE ---
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
@@ -63,12 +64,20 @@ const globalStyles = `
     padding: 0;
     width: 100%;
     max-width: 100%;
+    /* 1. Ensure the height of the root elements covers the entire viewport */
+    height: 100%; 
+    min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
   }
 
-  #root, main, header, section {
+  /* 2. Optional but recommended: Ensure the React root element is also full height */
+  #root {
+     height: 100%;
+  }
+
+  main, header, section {
     width: 100%;
     max-width: 100%;
   }
