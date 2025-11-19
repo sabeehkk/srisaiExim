@@ -1,6 +1,6 @@
 import { PRIMARY_COLOR, ACCENT_COLOR, SERVICE_CARDS, TEAL, VIOLET } from "@/lib/constants"
 import SectionWrapper from "@/components/SectionWrapper"
-import ExpertiseGridSection from "@/components/ExpertiseGridSection"
+import ServicesGridSection from "@/components/ServicesGridSection"
 import ServiceCard from "@/components/ServiceCard"
 
 const ServicesPage = () => (
@@ -29,7 +29,7 @@ const ServicesPage = () => (
   // <ExpertiseGridSection />
   // </SectionWrapper> 
   <div>
-    <ExpertiseGridSection/>
+    <ServicesGridSection/>
   </div>
 )
 

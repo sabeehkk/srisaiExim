@@ -5,6 +5,16 @@ import oceanFreight from "@/assets/oceanFreight.jpg"
 import cargoTruck from "@/assets/cargoTruck.jpg"
 import logistics from "@/assets/logistics.jpg"
 import dgCertification from "@/assets/dgCertification.jpg"
+import airFreightServices from "@/assets/airFreightServices.jpg"
+import customsClearance from "@/assets/customsClearance.jpg"
+//import customsClearanceConsultation from "@/assets/customsClearanceConsultation.jpg"
+import DGAdvisory from "@/assets/DGAdvisory.jpg"
+import customsComplianceAdvisory from "@/assets/customsComplianceAdvisory.jpg"
+import internationalTradeGuidance from "@/assets/internationalTradeGuidance.jpg"
+import supplyChainLogisticsPlanning from "@/assets/supplyChainLogisticsPlanning.jpg"
+import projectCargoSpecialCargoConsultancy from "@/assets/projectCargoSpecialCargoConsultancy.jpg"
+import exportImportStrategy from "@/assets/exportImportStrategy.jpg"
+
 
 export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
@@ -37,7 +47,7 @@ export const PAGE_LINKS = [
   { name: "About", page: "about" },
   { name: "Team", page: "team" },
   { name: "Services", page: "services" },
-  { name: "Contact", page: "contact" },
+  // { name: "Contact", page: "contact" },
 ]
 
 export const TEAM_MEMBERS = [
@@ -63,27 +73,20 @@ export const SERVICE_CARDS = [
     description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
     shortDescription: "Sri Sai Exim's specialist air freight teams constantly monitor direct flights and offer just-in-time deliveries to reduce inventory costs.",
     //imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
-    // imageUrl : "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg",
-    //imageUrl : `${airFreight}`,
     imageUrl:`${airFreight}`,
+    bannerImg:`${airFreightServices}`,
     content: {
       hero: "Seamless Global Air Cargo Management",
-      intro: "Sri Sai Exim specialist air freight teams constantly monitor direct flights and liaise with airlines and agents. With an extensive warehouse network, we also offer temporary storage and just-in-time deliveries that will measurably reduce your inventory costs.",
+      intro: "We provide reliable, time-bound and flexible air-freight solutions designed for urgent, high-value, and sensitive cargo.",
       services: [
-        "Quick Deliveries on the Upcoming Flight",
-        "Worldwide Air Freight",
-        "Overnight Assistance",
-        "Global Preferred Carriers",
-        "Packaging, crating, and short-term warehousing",
-        "Handling of heavy and/or dangerous goods / project cargo",
-        "Perishables, Dangerous Goods, Sensitive Cargo Handling",
-        "Customs Clearance",
-        "Warehousing",
-        "Packaging & Pallet Services",
-        "Optional Storage Facilities",
-        "Proof of Delivery Services",
-        "Freight Collect Services",
-        "Door-To-Door Services",
+            "Next-Flight-Out, Express & Priority Air Cargo for immediate delivery requirements",
+            "Direct and Consolidated Air Shipments based on cost and speed preferences",
+            "Door-to-Door, Airport-to-Airport and Multimodal Options ensuring seamless movement",
+            "Temperature-Controlled & Pharma Cargo Handling with specialised monitoring",
+            "Dangerous Goods (DG), Heavy Lift & Oversized Cargo Handling with expert supervision",
+            "Air Charter Solutions for large, urgent or non-standard commodities",
+            "Professional packaging, palletizing and crating, ensuring cargo safety during transit",
+            "End-to-end documentation support, customs processing, and real-time shipment updates",
       ],
       contact: {
         phone: "+91 9945242861",
@@ -95,23 +98,25 @@ export const SERVICE_CARDS = [
     id: "ocean-freight",
     icon: Ship,
     title: "Ocean Freight",
-    description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
+    description: "Cost-effective and flexible seafreight solutions for FCL and LCL, ensuring global reach.",
     shortDescription: "We handle large loads of goods by sea using containers, ideal for shipments over 100kg.",
     imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
     imageUrl :`${oceanFreight}`,
+    bannerImg:`${oceanFreight}`,
     content: {
       hero: "Reliable, High-Volume Global Shipping",
-      intro: "Sri Sai Exim handling ocean freight is the method of transporting often large loads of goods by sea – putting cargo in large containers which are loaded onto vessels. As a general rule, shipments weighing more than 100kg – or consisting of multiple cartons – will be sent by sea freight.",
+      intro: "Our ocean-freight services provide economical, scalable solutions for bulk and containerized shipments across global trade lanes.",
       services: [
-        "Transportation",
-        "Warehousing",
-        "Packing, Loading and Stuffing",
-        "Perishables, Dangerous Goods, Sensitive Cargo Handling",
-        "Door-To-Door Services",
-        "LCL Console movements (Less than Container Load)",
-        "Tank Containers (for liquids, gases, powders)",
-        "Heavy Duty Containers (for specialized cargo)",
-      ],
+            "FCL (Full Container Load) & LCL (Less-than-Container Load) based on volume",
+            "Consolidation Services to optimise shipping costs for small consignments",
+            "Scheduled Weekly Sailings, fixed cut-offs and dependable transit timelines",
+            "Special Equipment Handling including open-top, flat-rack and reefer containers",
+            "Door-to-Port, Port-to-Door & Door-to-Door movement with pick-up and last-mile delivery",
+            "Cargo Stuffing, De-stuffing, Warehousing & Storage support at major ports",
+            "Break-bulk and Project Cargo handling for large/irregular industrial shipments",
+            "Digital booking, loading confirmation and shipment visibility at each stage",
+          ]
+          ,
       contact: {
         phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
@@ -126,17 +131,19 @@ export const SERVICE_CARDS = [
     shortDescription: "We provide safe, efficient distribution by road, rail, and integrated freight, backed by our own and leased fleet.",
     // imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
     imageUrl : `${cargoTruck}`,
+    bannerImg:`${cargoTruck}`,
     content: {
       hero: "Seamless Road, Rail, and Integrated Freight",
-      intro: "Surface transportation means any conveyance of people, goods, or commodities using one or more surface transportation modes. Surface transportation primarily means the movement of people and cargo by road, train or ship. With focus and expertise, we provide safe and efficient distribution of a broad variety of goods which includes raw materials, finished and consumer goods, machinery, documents and foodstuffs with support of our dedicated Road Transport team.",
+      intro: "A strong and dependable ground-transport network ensures smooth cargo movement within India and cross-border routes.",
       services: [
-        "Tailor-made Road Freight Solutions",
-        "Distribution of Raw Materials, Finished Goods, and Machinery",
-        "Fleet of own and leased trucks",
-        "Seamless Sea-Road Movements",
-        "Efficient Air-Road Movements",
-        "Highest quality of customer service and perfect handling",
-      ],
+            "FTL (Full Truck Load) & LTL (Less Than Truck Load) services for flexible cargo volumes",
+            "Heavy-Haul, Oversized & Out-of-Gauge Cargo with engineering-based route planning",
+            "Route Survey, Permit Approvals & Escort Services for complex and high-risk consignments",
+            "Temperature-Controlled Transport for perishable, pharma and sensitive goods",
+            "Crane, Rigging, Loading/Unloading & Cargo-Securing infrastructure for safe handling",
+            "Real-time movement tracking and dedicated delivery coordination",
+          ]
+          ,
       contact: {
         phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
@@ -151,13 +158,18 @@ export const SERVICE_CARDS = [
     shortDescription: "Expert, integrated supply chain management and transportation solutions.",
     // imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
     imageUrl : `${logistics}`,
+    bannerImg:`${logistics}`,
     content: {
-      hero: "Service Coming Soon",
-      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
+      hero: "Logistics & Transportation",
+      intro: "We provide complete customs-clearance and regulatory-compliance assistance for smooth import and export operations.",
       services: [
-        "Reliable logistics solutions",
-        "Professional support",
-        "Timely updates",
+        "Multi-modal coordination across air, sea, and road to shorten transit time and reduce cost",
+        "Warehousing, Distribution & Inventory Management at key strategic locations",
+        "Packing, Crating, Palletizing & Labelling for export-ready shipments",
+        "First-mile pick-up to last-mile delivery across domestic and international destinations",
+        "Project Logistics Management for industrial machinery, plant relocations, renewable-energy cargo, and heavy equipment",
+        "Cargo Insurance Assistance ensuring protection for high-value shipments",
+        "Dedicated client support, documentation management, and shipment monitoring",
       ],
       contact: {
         phone: "+91 9945242861",
@@ -171,14 +183,19 @@ export const SERVICE_CARDS = [
     title: "Customs Brokerage",
     description: "Expert customs clearance and regulatory compliance to navigate complex international trade smoothly.",
     shortDescription: "Licensed brokerage services to minimize delays and ensure smooth international trade.",
-     imageUrl: "https://srisaiexim.in/images/custom-brokerage.jpg",
+    imageUrl: `${customsClearance}`,
+    bannerImg: `${customsClearance}`,
     content: {
-      hero: "Service Coming Soon",
-      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
+      hero: "Customs Brokerage",
+      intro: "We provide complete customs-clearance and regulatory-compliance assistance for smooth import and export operations.",
       services: [
-        "Reliable logistics solutions",
-        "Professional support",
-        "Timely updates",
+            "Import & Export Documentation, filing, assessment and coordination with customs",
+            "Duty Drawback, Refunds, Claims & Post-Clearance Support",
+            "Support for certifications: BIS, WPC, EPR, ETA, FSSAI (as applicable)",
+            "AEO Certification Guidance for exporters/importers and logistics operators",
+            "Special Valuation Branch (SVB) Support – fresh cases, renewal, supplier addition",
+            "Handling Show-Cause Notices, Appeals, Bond Closure & Final Assessment",
+            "Regulatory updates and compliance advisory to minimise delays and penalties",
       ],
       contact: {
         phone: "+91 9945242861",
@@ -193,14 +210,18 @@ export const SERVICE_CARDS = [
     description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
     shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
     //imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
-     imageUrl : `${dgCertification}`,
+    imageUrl :`${dgCertification}`,
+    bannerImg:`${dgCertification}`,
     content: {
-      hero: "Service Coming Soon",
-      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
+      hero: "dg-certification-&-packing",
+      intro: "We are equipped to handle Dangerous Goods (DG) with full compliance to international safety standards.",
       services: [
-        "Reliable logistics solutions",
-        "Professional support",
-        "Timely updates",
+            "DG Classification & Documentation based on the cargo nature and hazard category",
+            "Correct UN Certification, Labelling & Marking as per aviation and maritime guidelines",
+            "Specialised DG-approved Packaging, crating and cushioning to ensure safe transport",
+            "Handling of Lithium Batteries, Chemicals, Flammable Goods, Toxic Items, and other regulated materials",
+            "Safety audit, compliance checks and advisory before acceptance for shipment",
+            "Trained DG-certified personnel ensuring complete end-to-end compliance",
       ],
       contact: {
         phone: "+91 9945242861",
@@ -209,3 +230,77 @@ export const SERVICE_CARDS = [
     },
   },
 ]
+
+// src/lib/constants.js
+
+export const servicesData = [
+  {
+    title: "Supply Chain/Logistics Planning",
+    iconUrl: `${supplyChainLogisticsPlanning}`,
+    // ADDED: Premium description for card view
+    description: "Optimize transport modes, route planning, and consolidation strategies to ensure cost-effective and timely delivery.",
+    details: [
+      "Assessing transport modes (air/sea/road) to recommend the most cost-effective and time-efficient solution.",
+      "Route planning for standard, temperature-controlled, heavy-haul and project cargo.",
+      "Optimising consolidation, container utilisation, and shipment cycles to reduce cost.",
+      "Advising on packaging, palletising, warehousing, and multimodal flow to improve cargo safety and speed."
+    ],
+  },
+  {
+    title: "International Trade Guidance",
+    iconUrl: `${internationalTradeGuidance}`,
+    // ADDED: Premium description for card view
+    description: "Receive step-by-step guidance on export licensing, documentation, and trade-lane selection for seamless global market entry.",
+    details: [
+      "Step-by-step support for new exporters/importers entering global markets.",
+      "Advising on export licensing, documentation readiness, country-specific regulations and shipping standards.",
+      "Guidance for sourcing, vendor coordination, overseas delivery commitments and trade-lane selection."
+    ],
+  },
+  {
+    title: "Customs & Compliance Advisory",
+    iconUrl: `${customsComplianceAdvisory}`,
+    // ADDED: Premium description for card view
+    description: "Ensure regulatory adherence through pre-shipment checks, audit preparedness, and duty-drawback optimization.",
+    details: [
+      "Pre-shipment compliance checks to avoid customs delays or penalties.",
+      "Consultancy for certifications such as BIS, WPC, EPR, ETA and other regulatory requirements.",
+      "Support on AEO certification, SVB cases, duty-drawback optimisation and audit preparedness.",
+      "Review of customs filings, tariff classification, valuation, and regulatory updates."
+    ],
+  },
+  {
+    title: "Project Cargo & Special Cargo",
+    iconUrl: `${projectCargoSpecialCargoConsultancy}`,
+    // ADDED: Premium description for card view
+    description: "Technical planning for oversized, heavy-lift, and out-of-gauge shipments, including route feasibility and risk evaluation.",
+    details: [
+      "Technical planning for oversized, out-of-gauge, machinery and heavy-lift shipments.",
+      "Route feasibility studies, equipment selection, lifting/rigging recommendations and risk evaluation.",
+      "Tailored consultations on chartering, special equipment selection and high-value cargo insurance."
+    ],
+  },
+  {
+    title: "Dangerous Goods (DG) Advisory",
+    iconUrl: `${DGAdvisory}`,
+    // ADDED: Premium description for card view
+    description: "Comprehensive guidance on DG classification, required certifications, and safe transport methods for hazardous materials.",
+    details: [
+      "Guidance on DG classification, packaging, certifications and required documentation.",
+      "Reviewing safe transport methods for chemicals, lithium batteries, flammable and toxic substances.",
+      "Pre-acceptance checks to ensure air/sea carriers approve the shipment without delays."
+    ],
+  },
+  {
+    // title: "End-to-End Export/Import Strategy",
+        title: "Export & Import Strategy",
+
+    iconUrl: `${exportImportStrategy}`,
+    // ADDED: Premium description for card view
+    description: "Complete strategic planning for scaling international operations, from supply-chain design to final customs and delivery commitments.",
+    details: [
+      "Complete planning for businesses scaling their international shipments — from supply-chain design to customs, transport mode, cargo safety and delivery commitments.",
+      "Tailored packages for startups, SMEs and enterprises looking to strengthen global operations."
+    ],
+  },
+];

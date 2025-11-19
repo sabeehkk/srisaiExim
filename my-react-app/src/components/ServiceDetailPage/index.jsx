@@ -23,7 +23,7 @@ const ServiceDetailPage = () => {
 
   // Fallback content logic remains the same for robustness
   const title = service?.title || DEFAULT_TITLE;
-  const imageUrl = service?.imageUrl || DEFAULT_IMAGE;
+  const imageUrl = service?.bannerImg || DEFAULT_IMAGE;
   const intro = service?.content?.intro || DEFAULT_INTRO;
   const services = service?.content?.services || DEFAULT_SERVICES;
   const contact = {
@@ -37,7 +37,7 @@ const ServiceDetailPage = () => {
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full  transition duration-500 ease-in-out hover:scale-105" 
+          className="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-105" 
         /> {/* object-cover */}
         <div className="absolute inset-0 bg-[#122b6015] bg-opacity-40 flex items-end p-12">
           <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white tracking-tight leading-snug drop-shadow-lg" style={{fontSize: "40px" , textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }} >
@@ -84,7 +84,7 @@ const ServiceDetailPage = () => {
           {/* Contact Information (Column 3 - Sidebar) */}
           
           <div className="lg:col-span-1">
-            <div className="sticky top-10 p-6 bg-white border border-gray-200 rounded-lg shadow-xl">
+            <div className="sticky top-25 p-6 bg-white border border-gray-200 rounded-lg shadow-xl">
               <h3 className="text-2xl font-bold text-[#207391] mb-4 border-b pb-2">  {/* gray-800 */}
                 Connect with Our Team
               </h3>

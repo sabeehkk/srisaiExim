@@ -1,0 +1,50 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Heavy Lift Precision - Version 2</title>
+    
+    <style>
+        /* Crane Arm Swing Animation */
+        @keyframes arm-swing {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(2deg); } /* Slight swing */
+            100% { transform: rotate(0deg); }
+        }
+        /* Hook Movement */
+        @keyframes hook-move {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(0, 2px); } /* Slight up-down */
+            100% { transform: translate(0, 0); }
+        }
+
+        #crane-arm {
+            animation: arm-swing 4s ease-in-out infinite alternate;
+            transform-origin: 32px 10px; /* Pivot point at the top of the arm */
+        }
+        #crane-hook {
+            animation: hook-move 2s ease-in-out infinite alternate;
+        }
+    </style>
+    
+    <defs>
+        <linearGradient id="projectGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop stop-color="#333333" offset="0%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    
+    <rect x="18" y="40" width="28" height="12" rx="3" fill="#828282"></rect>
+    
+    <rect x="29" y="8" width="6" height="4" rx="1" fill="#0077B6"></rect>
+    
+    <g id="crane-arm">
+        <line x1="32" y1="12" x2="32" y2="40" stroke="url(#projectGradient)" stroke-width="3" stroke-linecap="round"/>
+        
+        <path 
+            id="crane-hook"
+            d="M 28 36 Q 32 32, 36 36 L 32 40 Z" 
+            fill="#4F4F4F" 
+            stroke="#333333" 
+            stroke-width="1"
+        />
+    </g>
+    
+</svg>
