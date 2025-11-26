@@ -23,8 +23,8 @@ const HeroSection = () => (
     ></div>
 
     {/* Content */}
-    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:pt-25 lg:px-8">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-white leading-tight mb-6 animate-fade-in-up"
+    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:pt-50 lg:px-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:pb-8 2xl:text-7xl font-extrabold tracking-tight text-white leading-tight mb-6 animate-fade-in-up"
       style={{textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)"}}
       >
         We make your relocation as{" "}
@@ -39,7 +39,7 @@ const HeroSection = () => (
       
            <Link
         to="/services"
-        className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg text-white shadow-xl transition lg:mb-30 md:mb-30 mb-30 xl:mb-20 lg:m-10 duration-300 transform hover:scale-105 hover:bg-[#00AEEF] bg-[#30b6f0] mb-[-5rem]"
+        className="px-8 sm:px-10 py-3 sm:py-4 lg:mt-75 text-base sm:text-lg font-semibold rounded-lg text-white shadow-xl transition lg:mb-30 md:mb-30 mb-30 xl:mb-20 lg:m-10 duration-300 transform hover:scale-105 hover:bg-[#00AEEF] bg-[#30b6f0] mb-[-5rem]"
         style={{color:"#FFFFFF"}}
       >
         Explore Services

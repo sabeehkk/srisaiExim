@@ -1,5 +1,6 @@
 import React from 'react';
 import { CLIENT_LOGOS } from "@/lib/constants";
+import { PRIMARY_COLOR, ACCENT_COLOR, SERVICE_CARDS } from "@/lib/constants"; 
 
 const LogoGrid = () => {
   const logos = CLIENT_LOGOS;
@@ -7,9 +8,10 @@ const LogoGrid = () => {
   return (
     <div className="py-16 bg-gray-50 border-t border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-extrabold text-gray-800 mb-12 tracking-tight sm:text-4xl">
+        <h2 className="text-center text-3xl font-extrabold text-gray-800 tracking-tight sm:text-4xl">
           Clients
         </h2>
+         <div className="w-20 h-1 mx-auto mt-3  rounded-full mb-12 " style={{ backgroundColor: PRIMARY_COLOR }}></div>
         {/* Grid layout maintained for 4 columns on desktop: grid-cols-2 for small, md:grid-cols-4 for medium/large */}
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4 lg:gap-8">
           {logos.map((logo, index) => (
